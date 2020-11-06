@@ -5,20 +5,12 @@ project(test)
 file(DOWNLOAD
         "https://github.com/friendlyanon/test-cmake-ppa/archive/test.zip"
         "${PROJECT_BINARY_DIR}/test.zip")
-file(ARCHIVE_EXTRACT INPUT "${PROJECT_BINARY_DIR}/test.zip"
-        DESTINATION "${PROJECT_BINARY_DIR}/temp/")
+file(MAKE_DIRECTORY "${PROJECT_BINARY_DIR}/temp/")
+execute_process(
+        WORKING_DIRECTORY "${PROJECT_BINARY_DIR}/temp"
+        COMMAND "${CMAKE_COMMAND}" -E tar xvf "../test.zip")
 
-file(GLOB_RECURSE tree
-        LIST_DIRECTORIES YES
-        RELATIVE "${PROJECT_BINARY_DIR}"
-        "${PROJECT_BINARY_DIR}/**")
-message(STATUS " --")
-foreach(branch IN LISTS tree)
-  if(NOT branch MATCHES "^CMakeFiles")
-    message(STATUS "${branch}")
-  endif()
-endforeach()
-message(STATUS " --")
+execute_process(COMMAND tree -I CMakeFiles "${PROJECT_BINARY_DIR}")
 
 file(GLOB dir LIST_DIRECTORIES YES "${PROJECT_BINARY_DIR}/temp/*")
 file(RENAME "${dir}" "${PROJECT_BINARY_DIR}/test")

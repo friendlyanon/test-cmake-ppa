@@ -15,9 +15,9 @@ branches:
 install:
   - curl -s --compressed "https://raw.githubusercontent.com/friendlyanon/test-cmake-ppa/master/KEY.gpg" | sudo apt-key add -
   - sudo apt-add-repository "deb https://raw.githubusercontent.com/friendlyanon/test-cmake-ppa/master/ ./"
-  - sudo apt-get update -qq
-  - sudo apt-get remove cmake cmake-data
-  - sudo apt-get install cmake -y
+  - sudo apt-get -qq update
+  - sudo apt-get purge cmake cmake-data
+  - sudo apt-get -y install cmake tree
 
 script:
   - set -e

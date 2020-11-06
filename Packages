@@ -4,7 +4,7 @@ Architecture: ppc64el
 Maintainer: cmake+development@discourse.cmake.org
 Installed-Size: 46760
 Depends: procps, libc6 (>= 2.16), libgcc1 (>= 1:3.0), libssl1.0.0 (>= 1.0.2~beta3), libstdc++6 (>= 5.2)
-Filename: ./cmake-3.18.4-ppc64el.deb
+Filename: ./cmake-3.18.4-Linux-ppc64el.deb
 Size: 12166380
 MD5sum: 820b8160bc5b946f66a809dd88dcbd6d
 SHA1: 14f3ab6ae65be23810d8563f5a98e6001ff1ba08
