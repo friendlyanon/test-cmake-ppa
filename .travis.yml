@@ -20,6 +20,7 @@ install:
   - sudo apt-get install cmake -y
 
 script:
+  - set -e
   - cmake -S . -B build
   - cmake --build build --config Release
   - cd build && ctest -C Release -VV
