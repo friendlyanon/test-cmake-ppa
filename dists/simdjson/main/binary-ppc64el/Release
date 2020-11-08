@@ -1,0 +1,5 @@
+Origin: simdjson
+Label: simdjson
+Archive: simdjson
+Architecture: ppc64el
+Component: main

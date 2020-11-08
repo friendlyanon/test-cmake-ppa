@@ -1,0 +1,28 @@
+Origin: simdjson
+Label: simdjson
+Suite: simdjson
+Codename: simdjson
+Architectures: ppc64el
+Components: main
+Description: simdjson
+Date: Sun, 08 Nov 2020 03:56:26 +0000
+MD5Sum:
+ 55e59b7c7fe2b8bc9218266c9f28ac1c              168 dists/simdjson/Release
+ 3ab043a4bd8d2964062b06c77579e4ed             6249 dists/simdjson/main/binary-ppc64el/Packages
+ 0a11028472e620b3bb6938f1eca8b1f7             3032 dists/simdjson/main/binary-ppc64el/Packages.gz
+ 0d60c55654656d9ee193e97bdba25fc8               89 dists/simdjson/main/binary-ppc64el/Release
+SHA1:
+ 43787ce9cbd3933296e8f377cee9e44357036616              168 dists/simdjson/Release
+ 19930d3a174efb5e5901a3990b63962d0739cfdc             6249 dists/simdjson/main/binary-ppc64el/Packages
+ c85411bec083dfc3a387ac4c8ad6cfed1bb06420             3032 dists/simdjson/main/binary-ppc64el/Packages.gz
+ 380b778e37ce3c946c0d3bbe0102f25f4b258155               89 dists/simdjson/main/binary-ppc64el/Release
+SHA256:
+ 81939b97d5f4822d4f83e2a8558426b8cedf43837be6b68ea9b59aaa0e5a7c35              168 dists/simdjson/Release
+ 093dd4e0b90fc27d3e57dce7d884b1f83b8b4750a867302ab953c0254a3f4fae             6249 dists/simdjson/main/binary-ppc64el/Packages
+ 943d44048d3d78b618f2f62c65af42c135e48d2f33ec6769b2105d9d1d8c5e69             3032 dists/simdjson/main/binary-ppc64el/Packages.gz
+ 1d36ed02f493f30595f4eb90f9a369def0b503e9608845fa9a198fbd1b02dc17               89 dists/simdjson/main/binary-ppc64el/Release
+SHA512:
+ 0351d9f32a4b2421aac5958b205a9e49060f0acfb8b6401ed868fa5f4b530d91c50f8328f9a5d81d8e2f2d0ce633d42c11570b99be80c21777502b018a65ba32              168 dists/simdjson/Release
+ 874cc6f664cd77e48f845c5cb9e06f74f3a48e04479b4aadbb2a47545155e2333209bf4d6868bbc8bb15e1429a367a8ca4de3994be69ab0ae74dbfe6b12b4416             6249 dists/simdjson/main/binary-ppc64el/Packages
+ c7ad22f3557727c2208135dfe113263ee2045cca09e323b593252610603d99e8eff7595fa162728f9534181b6c7bacba1a2b3adc7968829d130aa8bab8528a2e             3032 dists/simdjson/main/binary-ppc64el/Packages.gz
+ 9fbb36728c2e205ae9f7fac604a0e7f1abaee620ce887c0a071489b9ce4b9e16e79f1d6a67de53953926592f12670f6083d4c549c39725a6bf0f00568f565b20               89 dists/simdjson/main/binary-ppc64el/Release
