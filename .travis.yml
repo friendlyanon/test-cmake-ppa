@@ -12,13 +12,13 @@ branches:
   only: [master]
 
 install:
-  - wget -q -O - "https://raw.githubusercontent.com/friendlyanon/test-cmake-ppa/master/KEY.gpg" | sudo apt-key add -
-  - sudo apt-add-repository "deb https://raw.githubusercontent.com/friendlyanon/test-cmake-ppa/master/ simdjson main"
+  - wget -q -O - "https://raw.githubusercontent.com/friendlyanon/test-cmake-ppa/master/key.gpg" | sudo apt-key add -
+  - sudo apt-add-repository "deb https://raw.githubusercontent.com/friendlyanon/test-cmake-ppa/master simdjson main"
   - sudo apt-get update
   - sudo apt-get purge cmake cmake-data
   - sudo ls /var/lib/apt/lists/*_Packages -1 | grep ppa || echo
   - apt-cache policy cmake
-  - sudo apt-get -y install cmake=3.18.4
+  - sudo apt-get -t simdjson -y install cmake
 
 script:
   - set -e
